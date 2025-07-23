@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('portfolio')">Portfolio</a></li>
+        <li><a href="#" onclick="showPage('tic-tac-toe')">Tic-Tac-Toe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <!-- Empty Home Page -->
+    </section>
+
+    <section id="portfolio" class="page">
+      <div class="profile-card">
+        <img src="tictactoe.jfif" alt="Profile Photo" class="profile-img">
+        <h2>Tic Tac Toe</h2>
+        <p>Hi! I'm a fun 2-player party game. The goal is to get 3 X's or 3 O's in a row and block your opponent from doing the same thing. There's lots of strategies you can use to overcome your opponent!</p>
+      </div>
+    </section>
+
+    <section id="tic-tac-toe" class="page">
+      <div class="tic-tac-toe-container">
+        <div class="board" id="board"></div>
+        <p id="game-status"></p>
+        <button onclick="resetGame()">Restart Game</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
