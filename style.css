@@ -32,6 +32,7 @@
     color: #db4cee;
     text-align: center;
     margin: auto;
+    font-family: Monaco,monospace;
   }
   
   .nav-links li a:hover {
@@ -47,6 +48,7 @@
   .page.active {
     display: block;
   }
+
   
   /* Portfolio Card */
   .profile-card {
@@ -115,4 +117,8 @@
   
   button:hover {
     background: #005bcc;
+  }
+
+  .game-status {
+    color: #db4cee;
   }

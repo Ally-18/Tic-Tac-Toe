@@ -10,19 +10,21 @@
   <header>
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="index.html" onclick="showPage('home')">Home</a></li>
+        <li><a href="portfolio.html"">Portfolio</a></li>
         <li><a href="tic-tac-toe.html">Tic-Tac-Toe</a></li>
         <li><a href="rough-work.html">Rough Work</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
-    <br><br>
-    <h1 class="heading" id="heading">Welcome to the Tic-Tac-Toe Website!</h1>
+    <div class="tic-tac-toe-container">
+        <div class="board" id="board"></div>
+        <p id="game-status"></p>
+        <button onclick="resetGame()">Restart Game</button>
+      </div>
   </main>
-
   <script src="script.js"></script>
+
 </body>
 </html>
